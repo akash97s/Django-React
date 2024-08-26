@@ -1,0 +1,5 @@
+# Install Django backend dependencies
+pip install -r backend/requirements.txt
+
+# Navigate to the React frontend and install dependencies
+cd frontend && npm install
