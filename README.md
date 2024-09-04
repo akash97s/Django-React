@@ -18,6 +18,8 @@ Set up instructions:
 
 # Django-React Charts app
 
+NextJS + Typescript + D3.js + Django Rest API
+
 1.Clone the repository
 2.cd into project folder
 3.Install both Django and React dependencies:
