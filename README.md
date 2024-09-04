@@ -8,9 +8,28 @@ Set up instructions:
 3.Install both Django and React dependencies:
     pip install -r requirements.txt
 4.start django server:
-    cd backend
+    cd backend/myapp
     python manage.py runserver
-6. start react server:
-    cd frontend
+5. start react server:
+    cd frontend/my-app
     npm start
-7.Use the button to toggle between displaying user and posts data 
+6.Use the button to toggle between displaying user and posts data 
+
+
+# Django-React Charts app
+
+1.Clone the repository
+2.cd into project folder
+3.Install both Django and React dependencies:
+    pip install -r requirements.txt
+4.start django server:
+    cd backend/myapp
+    python manage.py runserver
+5. start react server:
+    cd frontend/my-next-app
+    npm run dev
+
+or 
+
+Use the docker.compose.yml to run docker container:  docker-compose up --build
+

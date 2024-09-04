@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  django:
+    build:
+      context: ./backend
+    container_name: django_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/myapp:/app
+    environment:
+      - DJANGO_SETTINGS_MODULE=myapp.settings
+    networks:
+      - my_network
+
+  nextjs:
+    build:
+      context: ./frontend
+    container_name: nextjs_app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge

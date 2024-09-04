@@ -1,0 +1,47 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Add space between sections */
+  }
+  
+  .ttile {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+  .chartSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .chartSection h2 {
+    margin-bottom: 10px;
+  }
+  
+  .chartSection > div {
+    width: 100%;
+    max-width: 90vw; /* Chart should not exceed 90% of viewport width */
+    height: 50vh; /* Chart height adjusts to 50% of viewport height */
+  }
+  
+  @media (max-width: 768px) {
+    .chartSection > div {
+      height: 40vh; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chartSection > div {
+      height: 30vh; /* Further adjust height for very small screens */
+    }
+  }
+  
